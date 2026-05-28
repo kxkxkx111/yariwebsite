@@ -249,36 +249,30 @@ export function SiteHeader({
 
         {/* Right cluster */}
         <div className="flex items-center gap-3 sm:gap-4">
-          {/* Language switcher */}
+          {/* Language switcher — pill-toggle, visible on all viewports */}
           <div
-            className="hidden items-center gap-1 text-[0.74rem] font-medium uppercase tracking-[0.18em] lg:flex"
+            className="inline-flex items-center rounded-full border border-border/70 bg-background p-0.5 text-[0.7rem] font-semibold uppercase tracking-[0.16em]"
             role="group"
             aria-label={dict.languageSwitcher}
           >
-            {locales.map((l, i) => {
+            {locales.map((l) => {
               const target = switchLocalePath(l, pathname);
               const isActive = l === locale;
               return (
-                <span key={l} className="flex items-center">
-                  {i > 0 && (
-                    <span aria-hidden className="mx-1 text-border">
-                      ·
-                    </span>
+                <Link
+                  key={l}
+                  href={target}
+                  aria-current={isActive ? "page" : undefined}
+                  hrefLang={localeMeta[l].htmlLang}
+                  className={cn(
+                    "rounded-full px-2.5 py-1 transition-colors sm:px-3",
+                    isActive
+                      ? "bg-foreground text-background"
+                      : "text-muted-foreground hover:text-foreground",
                   )}
-                  <Link
-                    href={target}
-                    aria-current={isActive ? "page" : undefined}
-                    hrefLang={localeMeta[l].htmlLang}
-                    className={cn(
-                      "transition-colors",
-                      isActive
-                        ? "text-foreground"
-                        : "text-muted-foreground hover:text-foreground",
-                    )}
-                  >
-                    {localeMeta[l].label}
-                  </Link>
-                </span>
+                >
+                  {localeMeta[l].label}
+                </Link>
               );
             })}
           </div>
@@ -333,38 +327,6 @@ export function SiteHeader({
               </li>
             ))}
           </ul>
-          <div className="mt-4 flex items-center justify-between border-t border-border/30 pt-4 text-[0.78rem] font-medium uppercase tracking-[0.18em]">
-            <span className="text-muted-foreground">{dict.languageSwitcher}</span>
-            <div className="flex items-center gap-1">
-              {locales.map((l, i) => {
-                const target = switchLocalePath(l, pathname);
-                const isActive = l === locale;
-                return (
-                  <span key={l} className="flex items-center">
-                    {i > 0 && (
-                      <span aria-hidden className="mx-1 text-border">
-                        ·
-                      </span>
-                    )}
-                    <Link
-                      href={target}
-                      aria-current={isActive ? "page" : undefined}
-                      hrefLang={localeMeta[l].htmlLang}
-                      onClick={() => setMobileOpen(false)}
-                      className={cn(
-                        "transition-colors",
-                        isActive
-                          ? "text-foreground"
-                          : "text-muted-foreground hover:text-foreground",
-                      )}
-                    >
-                      {localeMeta[l].label}
-                    </Link>
-                  </span>
-                );
-              })}
-            </div>
-          </div>
           <Link
             href={ctaHref}
             onClick={() => setMobileOpen(false)}
