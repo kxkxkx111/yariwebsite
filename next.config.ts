@@ -13,7 +13,11 @@ const basePath = process.env.BASE_PATH || "";
 const nextConfig: NextConfig = {
   basePath: basePath || undefined,
   assetPrefix: basePath || undefined,
-  trailingSlash: false,
+  // With a basePath, the Caddy reverse-proxy redirects `/dryary` → `/dryary/`
+  // (so the asset paths resolve). If Next.js then strips that trailing slash
+  // (the default), the redirect bounces back to /dryary and creates an
+  // infinite loop. Keep the slash on subpath deploys.
+  trailingSlash: basePath ? true : false,
   images: {
     // When a basePath is set, the built-in image optimizer fetches assets via
     // an absolute internal HTTP URL that does NOT include the basePath, which
