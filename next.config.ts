@@ -14,6 +14,14 @@ const nextConfig: NextConfig = {
   basePath: basePath || undefined,
   assetPrefix: basePath || undefined,
   trailingSlash: false,
+  images: {
+    // When a basePath is set, the built-in image optimizer fetches assets via
+    // an absolute internal HTTP URL that does NOT include the basePath, which
+    // 404s for files in /public/. `unoptimized: true` renders <Image> as a
+    // direct <img> with the basePath-prefixed src and skips the optimizer.
+    // Files are already sized + compressed during the asset pipeline.
+    unoptimized: basePath ? true : false,
+  },
 };
 
 export default nextConfig;
