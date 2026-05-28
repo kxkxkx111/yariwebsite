@@ -1,26 +1,417 @@
 @import "tailwindcss";
 
+/* ===== THEME ROOT =====
+   Brand colors and typography are NOT in this file.
+   See `lib/theme.ts` to change colors + heading weights,
+   and `app/fonts.ts` to change fonts.
+   Tailwind v4 tokens below resolve to CSS variables that
+   are injected at runtime from `lib/theme.ts`. */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Computed rhythm — off-white card/muted surfaces are NOT part of the
+     user-controlled brand palette. They are derived neutrals tuned to read
+     well on any background swap. Leave hard-coded. */
+  --brand-off-white: #fafaf9;    /* Card / elevated surface */
+  --brand-muted: #f3f2ee;        /* Subtle off-white for muted blocks */
+  --brand-border: #e9e6e0;       /* Warm hairline */
+  --brand-cream: #e8e2dc;        /* Decorative cream block (legacy) */
+  --brand-taupe: #a78e83;        /* Focus ring, muted accent */
+  --brand-text-muted: #6b6660;   /* Muted text — reads on white and off-white */
+  --brand-shadow: #6b6258;
+  --brand-destructive: #b85c5c;
+
+  /* User-controlled palette (from lib/theme.ts via runtime injection).
+     Fallbacks here mirror the default theme so the page never renders
+     a flash of unstyled brand on first paint. */
+  --background: var(--theme-bg, #ffffff);
+  --foreground: var(--theme-fg, #1a1a1a);
+
+  /* Legacy alias — components/CSS still reference --brand-caramel. */
+  --brand-caramel: var(--theme-accent, #dcac83);
+  --brand-deep: var(--theme-deep, #141414);
+
+  --card: var(--brand-off-white);
+  --card-foreground: var(--foreground);
+
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+
+  /* CTA = foreground bg / background text — cleanest on the brand ground */
+  --primary: var(--foreground);
+  --primary-foreground: var(--background);
+
+  --secondary: var(--brand-muted);
+  --secondary-foreground: var(--foreground);
+
+  --muted: var(--brand-muted);
+  --muted-foreground: var(--brand-text-muted);
+
+  --accent: var(--theme-accent, #dcac83);
+  --accent-foreground: var(--foreground);
+
+  --destructive: var(--brand-destructive);
+  --destructive-foreground: var(--background);
+
+  --border: var(--brand-border);
+  --input: var(--brand-border);
+  --ring: var(--brand-taupe);
+
+  --radius: 4px;
+  --radius-sm: 2px;
+  --radius-lg: 8px;
 }
+
+/* ─────────────────────────────────────────────────────────
+   Tailwind v4 @theme bridge
+   ───────────────────────────────────────────────────────── */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Brand-direct tokens for editorial accents */
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-caramel: var(--brand-caramel);
+  --color-brand-taupe: var(--brand-taupe);
+  --color-brand-light: var(--brand-off-white);
+  --color-brand-mute: var(--brand-border);
+
+  /* Word-level accent (cream on large display headlines) */
+  --color-accent-cream: var(--brand-cream);
+  --color-accent-caramel: var(--brand-caramel);
+  --color-accent-taupe: var(--brand-taupe);
+
+  /* Fonts — wired in `app/fonts.ts` via next/font/google.
+     `--font-sans-face` and `--font-display-face` are the Next-injected
+     CSS vars (see `variable` keys in app/fonts.ts).
+     `font-serif` is aliased to sans so any leftover class still renders. */
+  --font-sans: var(--font-sans-face), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: var(--font-sans-face), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-display-face), var(--font-sans-face),
+    ui-sans-serif, system-ui, sans-serif;
+
+  --radius-xs: 2px;
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius-lg);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ─────────────────────────────────────────────────────────
+   Base
+   ───────────────────────────────────────────────────────── */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--border);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.55;
+    font-weight: var(--theme-body-weight, 400);
+    font-feature-settings:
+      "kern",
+      "liga",
+      "calt",
+      "ss01";
+  }
+
+  /* Display headlines — weight + tracking driven by lib/theme.ts.
+     Italic is OUT (Geist's italic doesn't have the affordance Fraunces did). */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-sans);
+    font-weight: var(--theme-heading-weight, 600);
+    letter-spacing: var(--theme-heading-tracking, -0.02em);
+    line-height: 1.08;
+    font-style: normal;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--brand-caramel) 28%, transparent);
+    color: var(--foreground);
+  }
+
+  :where(a, button, [role="button"], input, select, textarea, summary):focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
   }
 }
 
-body {
+/* ─────────────────────────────────────────────────────────
+   Editorial display utility — Inter 900 for big numerics/labels
+   ───────────────────────────────────────────────────────── */
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  font-feature-settings: "tnum", "ss01";
+}
+
+/* ─────────────────────────────────────────────────────────
+   Word-level brand accent.
+   The class name `.accent-cream` is kept for backwards compat — many
+   components still reference it. The actual color now resolves to
+   whatever `theme.colors.accent` is in `lib/theme.ts`.
+   ───────────────────────────────────────────────────────── */
+.accent-cream {
+  color: var(--theme-accent);
+}
+
+/* ─────────────────────────────────────────────────────────
+   Utility — hide native scrollbar on horizontal scrollers.
+   Used by the reviews glass-card carousel.
+   ───────────────────────────────────────────────────────── */
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─────────────────────────────────────────────────────────
+   Warped image masks for the services grid.
+   ───────────────────────────────────────────────────────── */
+
+.warped-image {
+  --r: 20px;
+  --s: 40px;
+  --x: 25px;
+  --y: 5px;
+}
+
+.warped-image.top-right {
+  --_m: / calc(2 * var(--r)) calc(2 * var(--r))
+    radial-gradient(#000 70%, #0000 72%);
+  --_g: conic-gradient(at calc(100% - var(--r)) var(--r), #0000 25%, #000 0);
+  --_d: (var(--s) + var(--r));
+  mask:
+    calc(100% - var(--_d) - var(--x)) 0 var(--_m),
+    100% calc(var(--_d) + var(--y)) var(--_m),
+    radial-gradient(var(--s) at 100% 0, #0000 99%, #000 calc(100% + 1px))
+      calc(-1 * var(--r) - var(--x)) calc(var(--r) + var(--y)),
+    var(--_g) calc(-1 * var(--_d) - var(--x)) 0,
+    var(--_g) 0 calc(var(--_d) + var(--y));
+  mask-repeat: no-repeat;
+}
+
+.warped-image.top-left {
+  --_m: / calc(2 * var(--r)) calc(2 * var(--r))
+    radial-gradient(#000 70%, #0000 72%);
+  --_g: conic-gradient(at var(--r) var(--r), #000 75%, #0000 0);
+  --_d: (var(--s) + var(--r));
+  mask:
+    calc(var(--_d) + var(--x)) 0 var(--_m),
+    0 calc(var(--_d) + var(--y)) var(--_m),
+    radial-gradient(var(--s) at 0 0, #0000 99%, #000 calc(100% + 1px))
+      calc(var(--r) + var(--x)) calc(var(--r) + var(--y)),
+    var(--_g) calc(var(--_d) + var(--x)) 0,
+    var(--_g) 0 calc(var(--_d) + var(--y));
+  mask-repeat: no-repeat;
+}
+
+.warped-image.bottom-left {
+  --_m: / calc(2 * var(--r)) calc(2 * var(--r))
+    radial-gradient(#000 70%, #0000 72%);
+  --_g: conic-gradient(
+    from 180deg at var(--r) calc(100% - var(--r)),
+    #0000 25%,
+    #000 0
+  );
+  --_d: (var(--s) + var(--r));
+  mask:
+    calc(var(--_d) + var(--x)) 100% var(--_m),
+    0 calc(100% - var(--_d) - var(--y)) var(--_m),
+    radial-gradient(var(--s) at 0 100%, #0000 99%, #000 calc(100% + 1px))
+      calc(var(--r) + var(--x)) calc(-1 * var(--r) - var(--y)),
+    var(--_g) calc(var(--_d) + var(--x)) 0,
+    var(--_g) 0 calc(-1 * var(--_d) - var(--y));
+  mask-repeat: no-repeat;
+}
+
+.warped-image.bottom-right {
+  --_m: / calc(2 * var(--r)) calc(2 * var(--r))
+    radial-gradient(#000 70%, #0000 72%);
+  --_g: conic-gradient(
+    from 90deg at calc(100% - var(--r)) calc(100% - var(--r)),
+    #0000 25%,
+    #000 0
+  );
+  --_d: (var(--s) + var(--r));
+  mask:
+    calc(100% - var(--_d) - var(--x)) 100% var(--_m),
+    100% calc(100% - var(--_d) - var(--y)) var(--_m),
+    radial-gradient(var(--s) at 100% 100%, #0000 99%, #000 calc(100% + 1px))
+      calc(-1 * var(--r) - var(--x)) calc(-1 * var(--r) - var(--y)),
+    var(--_g) calc(-1 * var(--_d) - var(--x)) 0,
+    var(--_g) 0 calc(-1 * var(--_d) - var(--y));
+  mask-repeat: no-repeat;
+}
+
+/* ─────────────────────────────────────────────────────────
+   Quiet, editorial header underline animation
+   ───────────────────────────────────────────────────────── */
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link[data-active="true"]::after,
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* ─────────────────────────────────────────────────────────
+   Skip-link — visible only on keyboard focus
+   ───────────────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 1rem;
+  z-index: 100;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.875rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: top 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+/* ─────────────────────────────────────────────────────────
+   Hero entrance animations
+   ───────────────────────────────────────────────────────── */
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-line {
+  from {
+    transform: scaleX(0);
+    transform-origin: left center;
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    transform-origin: left center;
+    opacity: 1;
+  }
+}
+
+@keyframes hero-reveal {
+  from {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  to {
+    clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+/* ─────────────────────────────────────────────────────────
+   Contact form inputs — quiet editorial look
+   ───────────────────────────────────────────────────────── */
+.form-input {
+  width: 100%;
+  background-color: var(--card);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  transition:
+    border-color 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.form-input::placeholder {
+  color: var(--muted-foreground);
+}
+.form-input:hover {
+  border-color: color-mix(in srgb, var(--foreground) 35%, transparent);
+}
+.form-input:focus {
+  outline: none;
+  border-color: var(--foreground);
+  background-color: var(--background);
+}
+
+/* ─────────────────────────────────────────────────────────
+   Reduced motion
+   ───────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

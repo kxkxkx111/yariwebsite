@@ -1,0 +1,640 @@
+{
+  "site": {
+    "title": "Dr. Yary, Plastische und Ästhetische Chirurgie in Berlin",
+    "description": "Facharzt-Behandlungen in Plastischer, Rekonstruktiver und Ästhetischer Chirurgie bei Dr. Pouyan Yary, Capital Aesthetics am Kurfürstendamm in Berlin. Diskret, individuell, ergebnisoffen beraten.",
+    "ogAlt": "Dr. Pouyan Yary, Facharzt für Plastische und Ästhetische Chirurgie, Berlin Kurfürstendamm"
+  },
+  "skip": {
+    "toContent": "Zum Hauptinhalt springen"
+  },
+  "header": {
+    "logoAlt": "Dr. Yary, Plastic Surgery",
+    "nav": {
+      "treatments": "Behandlungen",
+      "minimalInvasive": "Minimal-invasiv",
+      "forWomen": "Für Frauen",
+      "forMen": "Für Männer",
+      "academy": "Akademie",
+      "about": "Über mich",
+      "contact": "Kontakt"
+    },
+    "dropdown": {
+      "treatmentsLabel": "Operative Eingriffe",
+      "minimalLabel": "Minimal-invasive Verfahren",
+      "overview": "Übersicht"
+    },
+    "cta": "Termin",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen",
+    "languageSwitcher": "Sprache wechseln"
+  },
+  "hero": {
+    "badge": "Plastische Chirurgie · Berlin Ku'damm",
+    "titleLine1": "Ästhetische Chirurgie",
+    "titleLine2": "mit Persönlichkeit.",
+    "subtitle": "Dr. med. Pouyan Yary, Facharzt für Plastische, Rekonstruktive und Ästhetische Chirurgie. Capital Aesthetics am Kurfürstendamm.",
+    "ctaPrimary": "Beratung vereinbaren",
+    "ctaSecondary": "Behandlungen ansehen",
+    "stats": [
+      {
+        "value": "10+",
+        "label": "Jahre OP-Erfahrung"
+      },
+      {
+        "value": "1.500+",
+        "label": "Plastische Eingriffe"
+      },
+      {
+        "value": "DGPRÄC",
+        "label": "Facharzt-Mitgliedschaft"
+      }
+    ]
+  },
+  "ctaPortrait": {
+    "eyebrow": "Bereit für den nächsten Schritt?",
+    "titleLine1": "Ästhetische Chirurgie.",
+    "titleLine2": "Mit Präzision",
+    "titleLine3": "und Persönlichkeit.",
+    "subtitle": "Vereinbaren Sie ein unverbindliches Erstgespräch. Wir nehmen uns Zeit, hören zu und beraten ehrlich.",
+    "ctaPrimary": "Beratung vereinbaren",
+    "ctaPrimaryHref": "/beratung-buchen",
+    "ctaSecondary": "Behandlungen ansehen",
+    "ctaSecondaryHref": "/behandlungen",
+    "portraitAlt": "Innenhof der Praxis Capital Aesthetics am Kurfürstendamm, Berlin",
+    "closingBody": "Jede Behandlung beginnt mit einem persönlichen Gespräch. Wir nehmen uns Zeit für Ihre Anatomie, Ihre Lebenssituation und Ihre Erwartungen, bevor wir ein Verfahren empfehlen."
+  },
+  "services": {
+    "eyebrow": "Behandlungsschwerpunkte",
+    "titleLine1": "Vier Bereiche.",
+    "titleLine2": "Ein Ergebnis: Sie.",
+    "intro": "Von der minimal-invasiven Behandlung bis zur komplexen Operation. Alle Eingriffe im Hause Dr. Yary folgen demselben Versprechen: höchste medizinische Präzision, klare Beratung, natürliche Ergebnisse.",
+    "cta": "Alle Leistungen ansehen",
+    "ctaHref": "/behandlungen",
+    "items": {
+      "breast": {
+        "title": "Brust",
+        "subtitle": "Implantate · Lift · Reduktion · Eigenfett",
+        "imageAlt": "Brustchirurgie, Behandlungsbereich Brust",
+        "href": "/behandlungen/brust"
+      },
+      "face": {
+        "title": "Gesicht",
+        "subtitle": "Deep Plane Lifting · Lid · Nase · Botox",
+        "imageAlt": "Gesichtschirurgie, Behandlungsbereich Gesicht",
+        "href": "/behandlungen/gesicht"
+      },
+      "body": {
+        "title": "Body Contouring",
+        "subtitle": "VASER Liposuktion · BodyTite · Lipödem",
+        "imageAlt": "Körperkonturierung, Bauch, Beine, Arme",
+        "href": "/behandlungen/bauch"
+      },
+      "minimal": {
+        "title": "Minimal-invasiv",
+        "subtitle": "Filler · Morpheus8 · Laser · PRP",
+        "imageAlt": "Minimal-invasive Behandlung, Filler, Morpheus8, Laser, PRP",
+        "href": "/minimalinvasive-verfahren"
+      }
+    }
+  },
+  "map": {
+    "eyebrow": "Standort",
+    "title": "Capital Aesthetics, am Kurfürstendamm.",
+    "intro": "Unsere Praxis liegt zentral am Kurfürstendamm in Berlin-Charlottenburg, gut erreichbar mit U-Bahn und S-Bahn, in fußläufiger Nähe zu zentralen Plätzen.",
+    "ariaLabel": "Standort der Praxis Capital Aesthetics auf der Karte",
+    "fallbackAlt": "Karte nicht verfügbar",
+    "popupBadge": "Praxis Berlin",
+    "directionsCta": "Wegbeschreibung",
+    "routeCta": "Route planen",
+    "contactCard": {
+      "eyebrow": "Kontakt",
+      "addressLabel": "Adresse",
+      "phoneLabel": "Telefon",
+      "whatsappLabel": "WhatsApp",
+      "emailLabel": "E-Mail"
+    }
+  },
+  "home": {
+    "carousel": {
+      "eyebrow": "Häufig nachgefragt",
+      "title": "Operative & minimal-invasive Highlights.",
+      "intro": "Sechs Eingriffe, in denen Dr. Yary besondere Erfahrung mitbringt. Von ästhetischen Klassikern wie der Brustvergrößerung bis zu modernen minimal-invasiven Verfahren.",
+      "ctaCard": "Mehr erfahren",
+      "items": {
+        "breastImplant": {
+          "title": "Brustvergrößerung mit Implantaten",
+          "blurb": "Volumenaufbau mit Implantaten, symmetrisch, natürlich.",
+          "image": "/carousel/breast-implant.jpg",
+          "href": "/behandlungen/brust"
+        },
+        "breastFat": {
+          "title": "Brustvergrößerung mit Eigenfett",
+          "blurb": "Natürliche Form, mit körpereigenem Gewebe.",
+          "image": "/carousel/breast-fat.jpg",
+          "href": "/behandlungen/brust"
+        },
+        "bbl": {
+          "title": "BBL, Gesäßvergrößerung mit Eigenfett",
+          "blurb": "Harmonische Silhouette aus körpereigenem Fett.",
+          "image": "/carousel/bbl.jpg",
+          "href": "/behandlungen/gesaess"
+        },
+        "vaser": {
+          "title": "VASER Fettabsaugung",
+          "blurb": "Ultraschall-präzise Konturierung, gewebeschonend.",
+          "image": "/carousel/vaser.jpg",
+          "href": "/behandlungen/bauch"
+        },
+        "lips": {
+          "title": "Lippenvergrößerung mit Hyaluronsäure",
+          "blurb": "Symmetrische, definierte Lippenkontur.",
+          "image": "/carousel/lips.jpg",
+          "href": "/minimalinvasive-verfahren/filler"
+        },
+        "botox": {
+          "title": "Faltenreduktion mit Botulinumtoxin",
+          "blurb": "Mimik-Falten ohne Skalpell.",
+          "image": "/carousel/botox.jpg",
+          "href": "/minimalinvasive-verfahren/botox"
+        }
+      }
+    },
+    "tech": {
+      "eyebrow": "Neueste Technologien",
+      "title": "Geräte, die unser Niveau definieren.",
+      "intro": "Die Wahl der richtigen Technologie entscheidet über Präzision, Heilung und Endergebnis. Capital Aesthetics arbeitet mit den führenden Plattformen der ästhetischen Medizin.",
+      "items": {
+        "vaser": {
+          "title": "VASER Liposuktion",
+          "blurb": "Ultraschall-gestützte Fettabsaugung, präzise, gewebeschonend."
+        },
+        "renuvion": {
+          "title": "Renuvion Hautstraffung",
+          "blurb": "Helium-Plasma-Energie für minimal-invasive Hautstraffung."
+        },
+        "co2": {
+          "title": "CO2-Laser",
+          "blurb": "Fraktionierte Hautverjüngung mit kontrollierter Erneuerung."
+        },
+        "ultrasound": {
+          "title": "Clarius L15 Ultraschall",
+          "blurb": "Tragbares HD-Ultraschall für anatomische Präzision."
+        }
+      }
+    },
+    "audienceSplit": {
+      "eyebrow": "Persönliche Beratung",
+      "title": "Eingriffe nach Lebensphase und Anatomie.",
+      "women": {
+        "label": "Für Frauen",
+        "title": "Behandlungen für Frauen",
+        "blurb": "Brust, Mommy-Makeover, Gesicht, feminine Anatomie verlangt feminine Techniken.",
+        "cta": "Entdecken",
+        "image": "/audience/women.jpg",
+        "imageAlt": "Behandlungen für Frauen, Dr. Yary",
+        "href": "/fuer-frauen"
+      },
+      "men": {
+        "label": "Für Männer",
+        "title": "Behandlungen für Männer",
+        "blurb": "Gynäkomastie, VASER, Definition, maskuline Konturen und natürliches Altern.",
+        "cta": "Entdecken",
+        "image": "/audience/men.jpg",
+        "imageAlt": "Behandlungen für Männer, Dr. Yary",
+        "href": "/fuer-maenner"
+      }
+    },
+    "aboutTeaser": {
+      "eyebrow": "Über mich",
+      "title": "Hallo, ich bin Dr. Pouyan Yary.",
+      "intro": "Ich bin Dr. med. Pouyan Yary, Facharzt für Plastische, Rekonstruktive und Ästhetische Chirurgie. Meine Praxis Capital Aesthetics liegt am Berliner Kurfürstendamm.",
+      "vita": "Mein Medizinstudium habe ich an der Universität Heidelberg absolviert. Klinische Stationen führten mich an die UCLA in Kalifornien und nach Brasilien, anschließend in die Schwerverbranntenzentren Köln-Merheim und das Unfallkrankenhaus Berlin. In der Park-Klinik Birkenwerder habe ich mich auf Lipödem-Chirurgie und Eigenfetttransfer spezialisiert. Heute behandle ich mit zehn Jahren OP-Erfahrung Patientinnen aus dem In- und Ausland.",
+      "cta": "Mehr über mich",
+      "image": "/portraits/dr-yary-hero-alt.jpg",
+      "imageAlt": "Dr. Pouyan Yary im weißen Kittel, professionelles Portrait",
+      "memberships": "DGPRÄC · DGBT-Trainer · Galderma KOL",
+      "quoteStart": "Mein größter beruflicher Erfolg ist nicht der schönste Eingriff, sondern das",
+      "quoteAccent": "Selbstbewusstsein",
+      "quoteEnd": ", das eine Patientin mit nach Hause nimmt."
+    },
+    "faq": {
+      "eyebrow": "Häufig gestellte Fragen",
+      "title": "Antworten auf Ihre wichtigsten Fragen.",
+      "intro": "Eine Auswahl an Fragen, die uns regelmäßig erreichen. Für alles Weitere: vereinbaren Sie ein persönliches Beratungsgespräch.",
+      "items": [
+        {
+          "q": "Wann ist eine plastische Operation für mich geeignet?",
+          "a": "Plastische und ästhetische Eingriffe sind dann sinnvoll, wenn ein konkreter Wunsch nach Veränderung mit realistischen Erwartungen einhergeht. Im persönlichen Beratungsgespräch klären wir Indikation, mögliche Verfahren und Alternativen, ergebnisoffen und ohne Druck."
+        },
+        {
+          "q": "Wie läuft ein Erstgespräch ab?",
+          "a": "Das Erstgespräch dauert 45 bis 60 Minuten. Wir besprechen Ihren Wunsch, die individuelle Anatomie und die Lebenssituation. Anschließend folgt eine klinische Untersuchung und ein konkreter Behandlungsvorschlag mit Kostenvoranschlag."
+        },
+        {
+          "q": "Welche Risiken gibt es bei einem ästhetischen Eingriff?",
+          "a": "Jeder chirurgische Eingriff trägt Risiken wie Nachblutung, Wundheilungsstörung oder Narbenbildung. Dr. Yary klärt im Beratungsgespräch über alle eingriffstypischen Risiken und seltenere Komplikationen schriftlich auf."
+        },
+        {
+          "q": "Wie lange dauert die Erholungszeit?",
+          "a": "Die Erholungszeit variiert je Eingriff. Bei Botox sind Sie sofort wieder gesellschaftsfähig, bei größeren Operationen rechnen Sie mit 2 bis 3 Wochen. Eine genaue Prognose erhalten Sie nach der klinischen Untersuchung."
+        },
+        {
+          "q": "Sind Behandlungsergebnisse von Dauer?",
+          "a": "Operative Eingriffe wie Lifting, Bruststraffung oder BBL liefern langfristige Ergebnisse (oft 10+ Jahre). Minimal-invasive Behandlungen wie Botox oder Filler sind reversibel und benötigen regelmäßige Auffrischungen."
+        },
+        {
+          "q": "Was kostet eine Behandlung?",
+          "a": "Die Kosten variieren je Eingriff und individuellem Befund. Eine erste Orientierung finden Sie auf der jeweiligen Behandlungsseite. Ein verbindlicher Kostenvoranschlag wird nach dem persönlichen Beratungsgespräch erstellt."
+        }
+      ]
+    },
+    "reviews": {
+      "eyebrow": "Im Mittelpunkt: meine Patientinnen",
+      "title": "Was Patientinnen sagen.",
+      "items": [
+        {
+          "stars": 5,
+          "name": "Sarah K.",
+          "date": "vor 2 Wochen",
+          "body": "Ich war zur Brustvergrößerung bei Dr. Yary und kann nur Positives berichten. Vom ersten Beratungsgespräch bis zur Nachsorge habe ich mich rundum gut aufgehoben gefühlt. Das Ergebnis ist absolut natürlich, genau so, wie ich es mir gewünscht habe."
+        },
+        {
+          "stars": 5,
+          "name": "Lena M.",
+          "date": "vor 1 Monat",
+          "body": "Dr. Yary nimmt sich wirklich Zeit, hört zu und drängt zu nichts. Er hat mir offen gesagt, was sinnvoll ist und wovon er abrät. Das schafft Vertrauen. Den Eingriff selbst und die Nachsorge fand ich vorbildlich."
+        },
+        {
+          "stars": 5,
+          "name": "Julia B.",
+          "date": "vor 3 Monaten",
+          "body": "Hatte einen Lippen-Filler und bin begeistert. Sehr feinfühliger, ehrlicher Arzt, der nicht übertreibt. Das Ergebnis sieht natürlich und harmonisch aus. Die Praxis am Ku'damm ist außerdem wunderschön."
+        },
+        {
+          "stars": 5,
+          "name": "Anna L.",
+          "date": "vor 4 Monaten",
+          "body": "Ich bin extra aus München angereist und es hat sich vollkommen gelohnt. Die VASER Liposuktion an den Beinen war ein Wendepunkt für mich. Dr. Yary ist ein Künstler: präzise, professionell und gleichzeitig sehr menschlich."
+        },
+        {
+          "stars": 5,
+          "name": "Sophie R.",
+          "date": "vor 5 Monaten",
+          "body": "Beste Erfahrung mit einem Arzt seit langem. Ich hatte vorher Angst, aber Dr. Yary hat mich Schritt für Schritt durch alles begleitet. Sechs Monate nach der OP: Top-Ergebnis und keine Komplikationen. Absolute Empfehlung."
+        },
+        {
+          "stars": 5,
+          "name": "Carla T.",
+          "date": "vor 6 Monaten",
+          "body": "Botox und Filler-Behandlung bei Dr. Yary. Niemand sieht, dass ich überhaupt etwas habe machen lassen, aber ich fühle mich frischer. Genau das wollte ich. Sehr empfehlenswert."
+        },
+        {
+          "stars": 5,
+          "name": "Nina P.",
+          "date": "vor 8 Monaten",
+          "body": "Sehr kompetenter Arzt mit viel Erfahrung. Lipödem-Behandlung lief absolut professionell, das ganze Team in der Praxis ist freundlich und sehr aufmerksam. Mein Leben hat sich danach verändert. Endlich kann ich wieder ohne Schmerzen leben."
+        },
+        {
+          "stars": 5,
+          "name": "Marie H.",
+          "date": "vor 10 Monaten",
+          "body": "Ich habe lange recherchiert, bevor ich mich für eine Brust-OP entschieden habe. Dr. Yary war von Anfang an die richtige Wahl. Klare Aufklärung, kein Verkaufsdruck, und das Ergebnis ist exakt so, wie wir es besprochen haben. Vielen Dank!"
+        }
+      ],
+      "aggregate": "5,0 · 47 Bewertungen",
+      "viewAllCta": "Alle Bewertungen auf Google ansehen",
+      "viewAllHref": "https://www.google.com/maps/place/?cid=717977565998209829"
+    },
+    "instagram": {
+      "eyebrow": "Instagram",
+      "title": "Einblicke aus dem Praxisalltag.",
+      "cta": "Auf Instagram folgen"
+    },
+    "reels": {
+      "eyebrow": "Reels",
+      "title": "Einblicke aus dem Praxisalltag.",
+      "intro": "Kurze Videos zu Behandlungen, Aufklärung und Momenten aus der Praxis. Tippen zum Aktivieren des Tons.",
+      "items": [
+        {
+          "src": "/reels/reel-1.mp4",
+          "poster": "/reels/reel-1.jpg"
+        },
+        {
+          "src": "/reels/reel-2.mp4",
+          "poster": "/reels/reel-2.jpg"
+        },
+        {
+          "src": "/reels/reel-3.mp4",
+          "poster": "/reels/reel-3.jpg"
+        },
+        {
+          "src": "/reels/reel-4.mp4",
+          "poster": "/reels/reel-4.jpg"
+        },
+        {
+          "src": "/reels/reel-5.mp4",
+          "poster": "/reels/reel-5.jpg"
+        }
+      ],
+      "scrollerLabel": "Reels, horizontal scrollbar",
+      "prevLabel": "Vorheriges Reel",
+      "nextLabel": "Nächstes Reel"
+    }
+  },
+  "footer": {
+    "tagline": "",
+    "contactLabel": "Kontakt",
+    "addressLabel": "Adresse",
+    "socialLabel": "Folgen",
+    "legalLabel": "Rechtliches",
+    "navLabel": "Navigation",
+    "treatmentsLabel": "Operative Eingriffe",
+    "minimalLabel": "Minimal-invasiv",
+    "moreLabel": "Mehr",
+    "directionsCta": "Wegbeschreibung",
+    "legalImprint": "Impressum",
+    "legalPrivacy": "Datenschutz",
+    "legalCookies": "Cookie-Einstellungen",
+    "rights": "Alle Rechte vorbehalten.",
+    "madeWithCare": "Mit Sorgfalt gestaltet."
+  },
+  "treatmentTemplate": {
+    "procedureDetailsHeading": "Details zum Verfahren",
+    "indicationHeading": "Für wen geeignet",
+    "procedureStepsHeading": "Verfahrens-Ablauf",
+    "bookingCta": "Beratung vereinbaren",
+    "bookingCtaSecondary": "Kontakt aufnehmen",
+    "closingHeading": "Beratung in Berlin vereinbaren.",
+    "closingBody": "Jede Behandlung beginnt mit einem persönlichen Gespräch. Wir nehmen uns Zeit für Ihre Anatomie, Ihre Lebenssituation und Ihre Erwartungen, bevor wir ein Verfahren empfehlen.",
+    "relatedHeading": "Verwandte Behandlungen.",
+    "relatedKicker": "Weiterlesen"
+  },
+  "pages": {
+    "treatmentsHub": {
+      "eyebrow": "Übersicht",
+      "title": "Operative Eingriffe.",
+      "intro": "Plastische und rekonstruktive Chirurgie in sechs Schwerpunktbereichen: Brust, Gesicht, Bauch, Beine, Arme und Gesäß. Jeder Bereich folgt demselben Prinzip: Anatomie respektieren, natürlich altern.",
+      "cardCtaLabel": "Mehr erfahren"
+    },
+    "minimalHub": {
+      "eyebrow": "Übersicht",
+      "title": "Minimal-invasive Verfahren.",
+      "intro": "Verfahren ohne Skalpell, Botulinumtoxin, Hyaluronsäure-Filler, Biostimulatoren, Laser, PRP und Radiofrequenz-Microneedling. Subtil, effektiv, mit minimaler Ausfallzeit.",
+      "cardCtaLabel": "Mehr erfahren"
+    },
+    "about": {
+      "eyebrow": "Über mich",
+      "title": "Dr. med. Pouyan Yary.",
+      "tagline": "Facharzt für Plastische, Rekonstruktive und Ästhetische Chirurgie.",
+      "lede": "Über 10 Jahre operative Erfahrung. Studium in Heidelberg, Stationen an der UCLA und in Brasilien, klinische Weiterbildung an den größten deutschen Schwerverbranntenzentren.",
+      "introHeading": "Mein beruflicher Werdegang",
+      "introBody": "Meine akademische Reise begann an der ältesten und renommiertesten Universität in Heidelberg, wo ich mein Medizinstudium erfolgreich absolvierte. Während meiner Ausbildung hatte ich das Privileg, Teile meiner Weiterbildung an der University of California, Los Angeles (UCLA) sowie in Brasilien zu absolvieren. Diese internationalen Erfahrungen haben meinen Horizont maßgeblich erweitert und mir wertvolle Einblicke in vielfältige Ansätze im Bereich der Plastischen und Ästhetischen Chirurgie ermöglicht.",
+      "introBody2": "Nach meinem Studium setzte ich meine Weiterbildung in renommierten Kliniken für Plastische, Rekonstruktive und Ästhetische Chirurgie fort. Ich arbeitete unter anderem in den größten deutschen Schwerverbranntenzentren, dem Klinikum Köln-Merheim und dem Unfallkrankenhaus Berlin. Dort widmete ich mich insbesondere der Hautwiederherstellung, der Verbesserung der Extremitätenfunktion und der Behandlung von Narben.",
+      "introBody3": "Anschließend entwickelte ich meine Fähigkeiten an der Park-Klinik Birkenwerder weiter und spezialisierte mich auf die Ästhetische Chirurgie. Heute, mit über 10 Jahren operativer Erfahrung, biete ich ein breites Spektrum an Verfahren an.",
+      "specHeading": "Meine Spezialisierung",
+      "specBody": "Derzeit konzentriere ich mich auf die Konturierung und Straffung von Gesicht und Körper. Ich setze sowohl minimalinvasive als auch chirurgische Methoden ein, um die Behandlungen individuell auf Ihre Bedürfnisse abzustimmen. Mein Ziel sind natürliche und harmonische Ergebnisse, die Ihre persönliche Schönheit unterstreichen.",
+      "philoHeading": "Meine Philosophie",
+      "philoBody": "Schönheit ist sehr persönlich und berührt uns alle, unterliegt aber nur in geringem Maße allgemeingültigen Prinzipien. Daher bevorzuge ich den Begriff der Ästhetik, der Wissenschaft der Sinneswahrnehmung, da er das individuelle Gefühl betont. Meine Priorität ist es, gemeinsam mit meinen Patientinnen und Patienten die Motivation hinter ihrem Wunsch zu ergründen. Das erste Gespräch wird druckfrei und ergebnisoffen geführt.",
+      "vitaHeading": "Stationen",
+      "vita": [
+        {
+          "year": "Heidelberg",
+          "label": "Medizinstudium, Universität Heidelberg"
+        },
+        {
+          "year": "UCLA",
+          "label": "Weiterbildung, University of California, Los Angeles"
+        },
+        {
+          "year": "Brasilien",
+          "label": "Klinische Hospitation"
+        },
+        {
+          "year": "Köln-Merheim & UKB",
+          "label": "Schwerverbrannten-/Wiederherstellungschirurgie"
+        },
+        {
+          "year": "Park-Klinik Birkenwerder",
+          "label": "Spezialisierung Ästhetische Chirurgie"
+        },
+        {
+          "year": "2022 bis heute",
+          "label": "Capital Aesthetics, Kurfürstendamm Berlin"
+        }
+      ],
+      "membershipsHeading": "Mitgliedschaften & Anerkennungen",
+      "memberships": [
+        "DGPRÄC, Deutsche Gesellschaft der Plastischen, Rekonstruktiven und Ästhetischen Chirurgen",
+        "DGBT, Zertifizierter Trainer der Deutschen Gesellschaft für Ästhetische Botulinumtherapie (seit November 2022)",
+        "Galderma, Trainer, Dozent und Key Opinion Leader (KOL) bei Galderma Laboratorium GmbH (seit Juli 2022)"
+      ],
+      "quote": "Schönheit ist persönlich. Mein Beruf beginnt mit einem zuhörenden Gespräch.",
+      "quoteAttribution": "Dr. med. Pouyan Yary",
+      "ctaHeading": "Lernen Sie mich persönlich kennen.",
+      "ctaBody": "Vereinbaren Sie einen Beratungstermin in Capital Aesthetics am Kurfürstendamm. Wir nehmen uns die Zeit, die Sie brauchen. Ergebnisoffen, ohne Druck.",
+      "ctaPrimary": "Beratung vereinbaren",
+      "ctaSecondary": "Kontakt aufnehmen"
+    },
+    "forWomen": {
+      "eyebrow": "Für Frauen",
+      "title": "Behandlungen für Frauen.",
+      "tagline": "Feminine Anatomie verlangt feminine Techniken.",
+      "intro": "Brust, Bauch nach Schwangerschaft, Mommy-Makeover, Gesichtsverjüngung, Lipödem. Die häufigsten Anliegen von Patientinnen, abgestimmt auf die weibliche Anatomie und Lebensphasen.",
+      "categoriesHeading": "Bereiche im Überblick",
+      "highlights": [
+        {
+          "title": "Brust",
+          "blurb": "Vergrößerung, Straffung, Reduktion oder Eigenfett, angepasst an Ihre Anatomie.",
+          "href": "/behandlungen/brust"
+        },
+        {
+          "title": "Bauch nach Schwangerschaft",
+          "blurb": "Abdominoplastik, VASER, Hautstraffung, Wiederaufbau der Bauchkontur.",
+          "href": "/behandlungen/bauch"
+        },
+        {
+          "title": "Gesicht",
+          "blurb": "Lifting, Lidchirurgie, Filler, Biostimulation, natürliche Verjüngung.",
+          "href": "/behandlungen/gesicht"
+        },
+        {
+          "title": "Lipödem-Chirurgie",
+          "blurb": "Spezialisierte Liposuktion für Lipödem Stadium I–III.",
+          "href": "/behandlungen/beine"
+        },
+        {
+          "title": "Gesäß (BBL)",
+          "blurb": "Eigenfetttransfer für harmonische Silhouette.",
+          "href": "/behandlungen/gesaess"
+        },
+        {
+          "title": "Lippen & Filler",
+          "blurb": "Symmetrie und Definition mit Hyaluronsäure.",
+          "href": "/minimalinvasive-verfahren/filler"
+        }
+      ],
+      "ctaHeading": "Ihre Beratung. Diskret und persönlich.",
+      "ctaBody": "Ein erstes Gespräch ist immer kostenfrei und unverbindlich. Wir nehmen uns Zeit für Ihre Geschichte."
+    },
+    "forMen": {
+      "eyebrow": "Für Männer",
+      "title": "Behandlungen für Männer.",
+      "tagline": "Maskuline Konturen, natürliches Altern.",
+      "intro": "Gynäkomastie, VASER-Definition, Kieferlinien-Konturierung, Haartherapie. Die häufigsten Anliegen männlicher Patienten, abgestimmt auf männliche Anatomie und ästhetische Sprache.",
+      "categoriesHeading": "Bereiche im Überblick",
+      "highlights": [
+        {
+          "title": "Gynäkomastie",
+          "blurb": "Reduktion der männlichen Brust, chirurgisch und/oder per Fettabsaugung.",
+          "href": "/behandlungen/brust"
+        },
+        {
+          "title": "VASER Body Definition",
+          "blurb": "Definition von Bauchmuskel-Kontur und maskuliner Silhouette.",
+          "href": "/behandlungen/bauch"
+        },
+        {
+          "title": "Kieferlinie & Kinn",
+          "blurb": "Konturierung mit Filler oder chirurgisch.",
+          "href": "/minimalinvasive-verfahren/filler"
+        },
+        {
+          "title": "Lidchirurgie",
+          "blurb": "Wacher Blick ohne dramatische Veränderung.",
+          "href": "/behandlungen/gesicht"
+        },
+        {
+          "title": "Botulinumtoxin",
+          "blurb": "Stirnfalten und Zornesfalten, diskret dosiert.",
+          "href": "/minimalinvasive-verfahren/botox"
+        },
+        {
+          "title": "PRP Haartherapie",
+          "blurb": "Stimulation der Haarwurzeln mit körpereigenem Plasma.",
+          "href": "/minimalinvasive-verfahren/plaettchenreiches-plasma-prp"
+        }
+      ],
+      "ctaHeading": "Beratung, sachlich und diskret.",
+      "ctaBody": "Wir besprechen Ihre Ziele klar und ergebnisorientiert. Erstgespräch unverbindlich."
+    },
+    "academy": {
+      "eyebrow": "Yary Aesthetic Academy",
+      "title": "Ihr Weg zur Meisterschaft in der Ästhetischen Medizin.",
+      "tagline": "„Ein Arzt ist ein Student, bis er stirbt.“",
+      "intro": "Die Yary Aesthetic Academy ist ein Weiterbildungszentrum für Ärztinnen und Ärzte, die ihre Fähigkeiten im Bereich minimalinvasiver ästhetischer Verfahren vertiefen möchten. Schulungen verbinden die neuesten wissenschaftlichen Fortschritte mit praktischer klinischer Erfahrung.",
+      "programsHeading": "Umfassende Schulungsprogramme",
+      "programsBody": "Meine Akademie wurde geschaffen, um Ärzten eine umfassende Ausbildung zu bieten, die es ihnen ermöglicht, sich sicher in der Welt moderner ästhetischer Techniken zu bewegen. Durch sorgfältig geplante Workshops, intensive Praxiskurse und regelmäßige interne Schulungen biete ich Ausbildungsprogramme, die auf die praktische Anwendung des erworbenen Wissens ausgerichtet sind.",
+      "curriculumHeading": "Unser strukturiertes Curriculum",
+      "curriculum": [
+        "Fortgeschrittene Gesichts- und Körperanatomie",
+        "Umfassendes Risiko- und Komplikationsmanagement",
+        "Patientenberatung und Behandlungsaufklärung",
+        "Detailliertes Wissen über Produkte und ihre Eigenschaften",
+        "Alternative und multimodale Behandlungsmethoden",
+        "Intensive praktische Übungen an Modellen"
+      ],
+      "safetyHeading": "Sicherheit und Qualität als Priorität",
+      "safetyBody": "Patientensicherheit und höchste Qualität der Verfahren bilden das Fundament jeder Schulung. Als zertifizierte Trainerin der Deutschen Gesellschaft für Ästhetische Botulinumtherapie (DGBT) seit November 2022 besitze ich die Kompetenzen, um Wissen gemäß den höchsten europäischen Standards zu vermitteln. Seit Juli 2022 bin ich außerdem als Trainerin, Dozentin und Key Opinion Leader (KOL) bei der Galderma Laboratorium GmbH tätig.",
+      "communityHeading": "Trete einer Gemeinschaft von Experten bei",
+      "communityBody": "Unsere Ausbildung umfasst nicht nur medizinische Techniken, sondern auch essenzielle Bereiche wie Patientenkommunikation, digitales Marketing und den Aufbau einer erfolgreichen ästhetischen Praxis in der modernen Medizinlandschaft.",
+      "ctaHeading": "Beginnen Sie Ihre berufliche Transformation.",
+      "ctaBody": "Erfahrungen aus internationalen Konferenzen und spezialisierten Workshops für Ärztinnen und Ärzte aus ganz Europa fließen direkt in meine Trainings ein.",
+      "ctaPrimary": "Kontakt aufnehmen"
+    },
+    "contact": {
+      "eyebrow": "Kontakt",
+      "title": "Kontaktieren Sie uns.",
+      "tagline": "Unsere Klinik für Plastische Chirurgie am Kurfürstendamm.",
+      "intro": "Wir bieten Ihnen eine persönliche Betreuung und beantworten alle Ihre Fragen. Unser Team begleitet Sie auf Ihrer ästhetischen Reise und hilft bei der Terminvereinbarung für ein Beratungsgespräch.",
+      "visitHeading": "Besuchen Sie uns",
+      "chatHeading": "Schreiben Sie uns",
+      "hoursHeading": "Sprechzeiten",
+      "hoursTodo": "TODO: Sprechzeiten vor Launch bestätigen.",
+      "hours": [
+        {
+          "day": "Montag bis Freitag",
+          "value": "09:00 bis 18:00"
+        },
+        {
+          "day": "Samstag",
+          "value": "Nach Vereinbarung"
+        },
+        {
+          "day": "Sonntag",
+          "value": "Geschlossen"
+        }
+      ],
+      "formHeading": "Schreiben Sie uns",
+      "formIntro": "Schicken Sie uns eine kurze Nachricht. Wir melden uns innerhalb eines Werktages.",
+      "form": {
+        "name": "Name",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "topic": "Anliegen",
+        "topicPlaceholder": "Eingriff oder Frage",
+        "message": "Nachricht",
+        "consent": "Ich habe die Datenschutzerklärung gelesen und stimme der Kontaktaufnahme zu.",
+        "submit": "Nachricht senden",
+        "todo": "TODO: Formular-Versand wird vor Launch an den Mailprovider angebunden."
+      }
+    },
+    "booking": {
+      "eyebrow": "Beratung",
+      "title": "Beratung buchen.",
+      "tagline": "Ihr persönliches Erstgespräch, diskret und unverbindlich.",
+      "intro": "Ein Beratungsgespräch dauert 45 bis 60 Minuten. Wir besprechen Ihren Wunsch, die individuelle Anatomie und mögliche Verfahren. Ergebnisoffen, ohne Druck.",
+      "stepsHeading": "So läuft Ihre Beratung ab",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Termin anfragen",
+          "body": "Per Telefon, WhatsApp, E-Mail oder über das Formular."
+        },
+        {
+          "number": "02",
+          "title": "Persönliches Gespräch",
+          "body": "45–60 Minuten in unserer Praxis am Kurfürstendamm."
+        },
+        {
+          "number": "03",
+          "title": "Untersuchung & Vorschlag",
+          "body": "Klinische Untersuchung, individueller Behandlungsplan, Kostenvoranschlag."
+        },
+        {
+          "number": "04",
+          "title": "Bedenkzeit",
+          "body": "Sie entscheiden in Ruhe. Wir drängen nicht."
+        }
+      ],
+      "channelsHeading": "Termin sofort vereinbaren",
+      "channels": {
+        "phone": "Anrufen",
+        "whatsapp": "Per WhatsApp",
+        "email": "E-Mail schreiben"
+      },
+      "embedTodo": "TODO: Cal.com / Doctolib-Einbindung. Bis dahin nutzen Sie bitte einen der direkten Kanäle.",
+      "embedFallback": "Online-Terminbuchung folgt in Kürze."
+    }
+  },
+  "legal": {
+    "impressum": {
+      "title": "Impressum",
+      "intro": "Angaben gemäß § 5 TMG.",
+      "responsibleHeading": "Verantwortlich für den Inhalt",
+      "contactHeading": "Kontakt",
+      "professionHeading": "Berufsbezeichnung und berufsrechtliche Regelungen",
+      "todo": "TODO. Vollständige Approbationsbehörde, Ärztekammer Berlin, USt-ID, Berufshaftpflicht und alle berufsrechtlichen Pflichtangaben werden vor Launch durch DSGVO-/Medizinrechts-Anwalt geprüft und ergänzt."
+    },
+    "datenschutz": {
+      "title": "Datenschutzerklärung",
+      "intro": "Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten auf dieser Website.",
+      "controllerHeading": "Verantwortlicher",
+      "hostingHeading": "Hosting",
+      "cookiesHeading": "Cookies",
+      "mapsHeading": "Karten (CARTO / MapLibre)",
+      "contactFormHeading": "Kontaktaufnahme",
+      "rightsHeading": "Ihre Rechte",
+      "todo": "TODO. Wird vor Launch durch DSGVO-Anwalt geprüft. Stub-Inhalte ersetzen mit verbindlichen Texten."
+    }
+  }
+}
