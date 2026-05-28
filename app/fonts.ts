@@ -9,7 +9,7 @@
  * 3. Keep the weights array aligned with what you actually use in
  *    `lib/theme.ts.typography`
  */
-import { Geist, Inter } from "next/font/google";
+import { Geist, Inter, Sacramento } from "next/font/google";
 
 /** Body font — used for all text and headings by default.
  *  The `variable` name is referenced by the Tailwind v4 `--font-sans`
@@ -27,5 +27,15 @@ export const fontDisplay = Inter({
   subsets: ["latin", "latin-ext"],
   variable: "--font-display-face",
   weight: ["800", "900"],
+  display: "swap",
+});
+
+/** Script / cursive font — used for headline ornaments like the hero
+ *  "im Herzen von" Schnörkel-treatment. Pairs with the `font-script`
+ *  utility class defined in `app/globals.css`. */
+export const fontScript = Sacramento({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-script-face",
+  weight: ["400"],
   display: "swap",
 });

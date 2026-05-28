@@ -18,8 +18,12 @@ export type HeroDict = {
   badge: string;
   titleLine1: string;
   titleLine2: string;
-  /** Optional split for an animated heart icon between the two halves */
+  /** Optional 3-part split for the animated-heart ornament:
+   *   "<Pre> <Heart> <Mid> <Post>"
+   *  Pre + Mid render in a script font (cursive Schnörkel), Post in
+   *  the accent color. Used by the hero for "im Herzen ❤ von Berlin." */
   titleLine2Pre?: string;
+  titleLine2Mid?: string;
   titleLine2Post?: string;
   subtitle: string;
   ctaPrimary: string;
@@ -126,12 +130,22 @@ export function HeroSection({
           >
             {dict.titleLine1}
             <br />
-            {dict.titleLine2Pre && dict.titleLine2Post ? (
+            {dict.titleLine2Pre &&
+            dict.titleLine2Mid &&
+            dict.titleLine2Post ? (
               <>
-                <span className="text-[var(--foreground)]">
+                <span
+                  className="text-[var(--foreground)]"
+                  style={{
+                    fontFamily: "var(--font-script)",
+                    fontWeight: 400,
+                    letterSpacing: "0",
+                  }}
+                >
                   {dict.titleLine2Pre}
-                </span>
-                <AnimatedHeart className="mx-2 inline-block h-[0.78em] w-[0.78em] text-[var(--theme-accent)]" />
+                  <AnimatedHeart className="mx-2 inline-block h-[0.65em] w-[0.65em] text-[var(--theme-accent)]" />
+                  {dict.titleLine2Mid}
+                </span>{" "}
                 <span className="accent-cream">{dict.titleLine2Post}</span>
               </>
             ) : (

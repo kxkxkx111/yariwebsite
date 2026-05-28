@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
-import { fontSans, fontDisplay } from "@/app/fonts";
+import { fontSans, fontDisplay, fontScript } from "@/app/fonts";
 import { theme } from "@/lib/theme";
 import "../globals.css";
 import { SiteHeader } from "@/components/site/site-header";
@@ -122,7 +122,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
     <html
       lang={htmlLang}
       suppressHydrationWarning
-      className={`${fontSans.variable} ${fontDisplay.variable} h-full antialiased`}
+      className={`${fontSans.variable} ${fontDisplay.variable} ${fontScript.variable} h-full antialiased`}
     >
       <head>
         {/* Inject theme variables BEFORE Tailwind globals load so tokens resolve cleanly. */}

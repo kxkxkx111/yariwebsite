@@ -49,8 +49,9 @@
         "label": "Facharzt-Mitgliedschaft"
       }
     ],
-    "titleLine2Pre": "im Herzen von",
-    "titleLine2Post": "Berlin."
+    "titleLine2Pre": "im Herzen",
+    "titleLine2Post": "Berlin.",
+    "titleLine2Mid": "von"
   },
   "ctaPortrait": {
     "eyebrow": "Bereit für den nächsten Schritt?",
