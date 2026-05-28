@@ -5,7 +5,6 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { GoogleReviewsBadge } from "@/components/site/google-reviews-badge";
-import { AnimatedHeart } from "@/components/site/animated-heart";
 import { pages, treatmentsHub, path } from "@/lib/routes";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -18,12 +17,10 @@ export type HeroDict = {
   badge: string;
   titleLine1: string;
   titleLine2: string;
-  /** Optional 3-part split for the animated-heart ornament:
-   *   "<Pre> <Heart> <Mid> <Post>"
-   *  Pre + Mid render in a script font (cursive Schnörkel), Post in
-   *  the accent color. Used by the hero for "im Herzen ❤ von Berlin." */
+  /** Optional 2-part split: Pre renders in default foreground,
+   *  Post in the caramel accent color. Used by the hero for
+   *  "im Herzen von Berlin." */
   titleLine2Pre?: string;
-  titleLine2Mid?: string;
   titleLine2Post?: string;
   subtitle: string;
   ctaPrimary: string;
@@ -130,21 +127,10 @@ export function HeroSection({
           >
             {dict.titleLine1}
             <br />
-            {dict.titleLine2Pre &&
-            dict.titleLine2Mid &&
-            dict.titleLine2Post ? (
+            {dict.titleLine2Pre && dict.titleLine2Post ? (
               <>
-                <span
-                  className="text-[var(--foreground)]"
-                  style={{
-                    fontFamily: "var(--font-script)",
-                    fontWeight: 400,
-                    letterSpacing: "0",
-                  }}
-                >
+                <span className="text-[var(--foreground)]">
                   {dict.titleLine2Pre}
-                  <AnimatedHeart className="mx-2 inline-block h-[0.65em] w-[0.65em] text-[var(--theme-accent)]" />
-                  {dict.titleLine2Mid}
                 </span>{" "}
                 <span className="accent-cream">{dict.titleLine2Post}</span>
               </>
