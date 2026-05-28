@@ -31,7 +31,7 @@
   "hero": {
     "badge": "Plastische Chirurgie · Berlin Ku'damm",
     "titleLine1": "Ästhetische Chirurgie",
-    "titleLine2": "mit Persönlichkeit.",
+    "titleLine2": "im Herzen von Berlin.",
     "subtitle": "Dr. med. Pouyan Yary, Facharzt für Plastische, Rekonstruktive und Ästhetische Chirurgie. Capital Aesthetics am Kurfürstendamm.",
     "ctaPrimary": "Beratung vereinbaren",
     "ctaSecondary": "Behandlungen ansehen",
@@ -48,7 +48,9 @@
         "value": "DGPRÄC",
         "label": "Facharzt-Mitgliedschaft"
       }
-    ]
+    ],
+    "titleLine2Pre": "im Herzen",
+    "titleLine2Post": "von Berlin."
   },
   "ctaPortrait": {
     "eyebrow": "Bereit für den nächsten Schritt?",

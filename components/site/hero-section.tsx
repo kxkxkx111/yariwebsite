@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { GoogleReviewsBadge } from "@/components/site/google-reviews-badge";
+import { AnimatedHeart } from "@/components/site/animated-heart";
 import { pages, treatmentsHub, path } from "@/lib/routes";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -17,6 +18,9 @@ export type HeroDict = {
   badge: string;
   titleLine1: string;
   titleLine2: string;
+  /** Optional split for an animated heart icon between the two halves */
+  titleLine2Pre?: string;
+  titleLine2Post?: string;
   subtitle: string;
   ctaPrimary: string;
   ctaSecondary: string;
@@ -122,7 +126,17 @@ export function HeroSection({
           >
             {dict.titleLine1}
             <br />
-            <span className="accent-cream">{dict.titleLine2}</span>
+            <span className="accent-cream">
+              {dict.titleLine2Pre && dict.titleLine2Post ? (
+                <>
+                  {dict.titleLine2Pre}
+                  <AnimatedHeart className="mx-2 inline-block h-[0.78em] w-[0.78em] text-[var(--theme-accent)]" />
+                  {dict.titleLine2Post}
+                </>
+              ) : (
+                dict.titleLine2
+              )}
+            </span>
           </motion.h1>
 
           {/* Subtitle */}

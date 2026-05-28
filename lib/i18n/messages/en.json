@@ -31,7 +31,7 @@
   "hero": {
     "badge": "Plastic Surgery · Berlin Ku'damm",
     "titleLine1": "Aesthetic Surgery",
-    "titleLine2": "with personality.",
+    "titleLine2": "in the heart of Berlin.",
     "subtitle": "Dr. med. Pouyan Yary, Specialist in Plastic, Reconstructive and Aesthetic Surgery. Capital Aesthetics on Kurfürstendamm.",
     "ctaPrimary": "Book a Consultation",
     "ctaSecondary": "Explore Treatments",
@@ -48,7 +48,9 @@
         "value": "DGPRÄC",
         "label": "Specialist society member"
       }
-    ]
+    ],
+    "titleLine2Pre": "in the heart of",
+    "titleLine2Post": "Berlin."
   },
   "ctaPortrait": {
     "eyebrow": "Ready for the next step?",
