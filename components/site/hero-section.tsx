@@ -126,17 +126,17 @@ export function HeroSection({
           >
             {dict.titleLine1}
             <br />
-            <span className="accent-cream">
-              {dict.titleLine2Pre && dict.titleLine2Post ? (
-                <>
+            {dict.titleLine2Pre && dict.titleLine2Post ? (
+              <>
+                <span className="text-[var(--foreground)]">
                   {dict.titleLine2Pre}
-                  <AnimatedHeart className="mx-2 inline-block h-[0.78em] w-[0.78em] text-[var(--theme-accent)]" />
-                  {dict.titleLine2Post}
-                </>
-              ) : (
-                dict.titleLine2
-              )}
-            </span>
+                </span>
+                <AnimatedHeart className="mx-2 inline-block h-[0.78em] w-[0.78em] text-[var(--theme-accent)]" />
+                <span className="accent-cream">{dict.titleLine2Post}</span>
+              </>
+            ) : (
+              <span className="accent-cream">{dict.titleLine2}</span>
+            )}
           </motion.h1>
 
           {/* Subtitle */}
